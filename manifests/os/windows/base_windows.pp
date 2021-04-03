@@ -1,5 +1,5 @@
 class profiles::os::windows::base_windows(
-  $software = ""
+  $software = "default value"
 ){
 
 notify{$software:}
