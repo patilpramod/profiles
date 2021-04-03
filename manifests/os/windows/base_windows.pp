@@ -1,5 +1,7 @@
-class profiles::os::windows::base_windows{
+class profiles::os::windows::base_windows(
+  $software = ""
+){
 
-notify{'base_windows testing':}
+notify{"base_windows testing ${software}":}
 
 }
