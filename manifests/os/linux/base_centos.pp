@@ -1,4 +1,4 @@
 class profiles::os::linux::base_centos{
-include java::install
+#include java::install
 
 }
