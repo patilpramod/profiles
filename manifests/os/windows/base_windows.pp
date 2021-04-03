@@ -2,7 +2,8 @@ class profiles::os::windows::base_windows(
   $software = "default value"
 ){
 
-notify{$software:}
+$t = lookup('test')
+notify{$t:}
 notify{"base_windows testing ${software}":}
 
 }
