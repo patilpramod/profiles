@@ -18,12 +18,12 @@ registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\\\ValueWithA\Bac
   data       => "The Puppet Agent service periodically manages your configuration",
 }
 
-registry_value { 'PuppetDescription':
-  path       => 'HKLM\System\CurrentControlSet\Services\Puppet\Description',
-  ensure     => present,
-  type       => string,
-  data       => "The Puppet Agent service periodically manages your configuration",
-}
+# registry_value { 'PuppetDescription':
+#   path       => 'HKLM\System\CurrentControlSet\Services\Puppet\Description',
+#   ensure     => present,
+#   type       => string,
+#   data       => "The Puppet Agent service periodically manages your configuration",
+# }
 
 class myapp {
   registry::value { 'puppetserver':
