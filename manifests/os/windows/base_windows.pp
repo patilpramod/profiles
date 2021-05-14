@@ -59,7 +59,16 @@ class { 'common_scripts': }
 #     ensure => present,
 #   }
 
-
+include os_patching
+# class { 'os_patching':
+#   patch_window     => 'Week3',
+#   blackout_windows => { 'End of year change freeze':
+#     {
+#       'start': '2018-12-15T00:00:00+1000',
+#       'end':   '2019-01-15T23:59:59+1000',
+#     }
+  },
+}
 class { 'wsus_client':
  # server_url             => 'http://my-wsus-server.internal:8530', # WSUS Server
  # enable_status_server   => true,                                   # Send status to WSUS too
