@@ -2,7 +2,7 @@ class profiles::os::windows::base_windows(
   $software = "default value"
 ){
 
-include common_scripts
+class {common_scripts}
 # https://docs.microsoft.com/de-de/security-updates/windowsupdateservices/21669493
 # registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet':
 #     ensure => present,
