@@ -62,7 +62,7 @@ class { 'common_scripts': }
 
 class { 'wsus_client':
  # server_url             => 'http://my-wsus-server.internal:8530', # WSUS Server
-  enable_status_server   => true,                                   # Send status to WSUS too
+ # enable_status_server   => true,                                   # Send status to WSUS too
   auto_update_option     => 'AutoNotify',                          # automatically download updates and notify for install
 }
 }
