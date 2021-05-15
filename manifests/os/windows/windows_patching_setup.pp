@@ -1,6 +1,6 @@
 class profiles::os::windows::windows_patching_setup(
   $target_group = "Unassigned Computer",
-  $target_group_enabled = "1",
+  $target_group_enabled = Numeric(true),
   $wsus_server_url = 'http://wsus:80',
 )
 {
