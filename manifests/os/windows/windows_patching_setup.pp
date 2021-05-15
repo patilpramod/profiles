@@ -1,4 +1,4 @@
-class profiles::os::windows::windows_patching(
+class profiles::os::windows::windows_patching_setup(
   # $target_group = "Unassigned Computer",
   # $target_group_enabled = 1,
   # $wsus_server_url = 'http://wsus:80',
