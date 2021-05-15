@@ -1,6 +1,6 @@
 class profiles::os::windows::base_windows(
-  $software = "default value"
-  
+  $software = "default value",
+  $update_enabled = "false"
 ){
 
 
