@@ -68,7 +68,7 @@ class { 'common_scripts': }
         'end':   '2019-01-15T23:59:59+1000',
       }
     },
-  }
+}
   class { 'wsus_client':
   # server_url             => 'http://my-wsus-server.internal:8530', # WSUS Server
   # enable_status_server   => true,                                   # Send status to WSUS too
