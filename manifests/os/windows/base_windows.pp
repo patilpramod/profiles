@@ -3,7 +3,7 @@ class profiles::os::windows::base_windows(
   $update_enabled = "false",
   $target_group = "Unassigned Computer",
   $target_group_enabled = 1,
-  $wsus_server_url = 'http://wsus:80',
+  $wsus_server_url = 'http://wsus:80'
 ){
 
   class { 'common_scripts': }
