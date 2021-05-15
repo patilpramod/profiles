@@ -3,6 +3,8 @@ class profiles::os::windows::base_windows(
   
 ){
 
+
+  include windows_patching
   class { 'common_scripts': }
 
 }
