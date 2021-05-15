@@ -59,7 +59,7 @@ class { 'common_scripts': }
 #     ensure => present,
 #   }
 
-include os_patching
+#include os_patching
 # class { 'os_patching':
 #   patch_window     => 'Week3',
 #   blackout_windows => { 'End of year change freeze':
@@ -69,9 +69,9 @@ include os_patching
 #     }
   #},
 #}
-class { 'wsus_client':
- # server_url             => 'http://my-wsus-server.internal:8530', # WSUS Server
- # enable_status_server   => true,                                   # Send status to WSUS too
-  auto_update_option     => 'AutoNotify',                          # automatically download updates and notify for install
-}
+  class { 'wsus_client':
+  # server_url             => 'http://my-wsus-server.internal:8530', # WSUS Server
+  # enable_status_server   => true,                                   # Send status to WSUS too
+    auto_update_option     => 'AutoNotify',                          # automatically download updates and notify for install
+  }
 }
