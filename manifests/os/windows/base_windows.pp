@@ -8,6 +8,7 @@ class { 'common_scripts': }
 #     ensure => present,
 # }
 
+##WSUSutil usecustomwebsite false
 # registry_value { 'HKLM\System\CurrentControlSet\Services\Puppet\Description':
 #   ensure => present,
 #   type   => string,
